@@ -96,4 +96,4 @@ jobs:
           git config --global user.name "Harshjerry"
           git add kubernetes/productcatalog/deploy.yaml
           git commit -m "[CI]: Update product catalog image tag"
-          git push origin HEAD
+          git push origin HEAD:${{ github.head_ref }}
